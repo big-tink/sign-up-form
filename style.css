@@ -17,7 +17,7 @@
 body {
     height: 100vh;
     background-color: rgb(31, 30, 30);
-    background-image: radial-gradient(circle, rgb(116, 118, 121), rgb(0, 0, 0) 100%);
+    background-image: radial-gradient(circle, rgb(161, 165, 172), rgb(26, 24, 24) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +116,20 @@ input {
     font-size: 1.5rem;
     padding-left: 1rem;
     border-radius: 4px;
+    outline: none;
+    border: 2px;
+}
+
+input:focus {
+    box-shadow: 2px 2px 2px rgb(87, 88, 90);
+    background-color: rgba(28, 28, 143, 0.1);
+    border: 1px solid rgb(42, 56, 248)
+}
+
+input:invalid {
+    background-color: rgb(204, 20, 20, 0.1);
+    box-shadow: 2px 2px 2px rgb(87, 88, 90);
+    border: 1px solid rgb(211, 33, 33);
 }
 
 .input {
@@ -139,6 +153,10 @@ button.createAccount {
     color: rgb(218, 223, 228);
 }
 
+button:active {
+    background-color: rgb(71, 75, 83);
+}
+
 p.logIn {
     margin-top: 1vw;
     font-size: 1.2rem;
@@ -147,4 +165,8 @@ p.logIn {
 
 a.logIn {
     color: rgb(3, 3, 3);
+}
+
+a:hover {
+    color: rgb(4, 42, 167);
 }
