@@ -33,7 +33,7 @@
 
         <p>You <em>know</em> you want to.</p>
 
-        <form action="/my-form-location" method="get">
+        <form id="myForm" method="get">
 
             <p>Let's do this!</p>
 
@@ -42,12 +42,12 @@
                 
                 <div class="input">
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="John">
+                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
                 </div>
 
                 <div class="input">
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Doe">
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
                 </div>
 
             </section>
@@ -56,12 +56,12 @@
 
                 <div class="input">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" placeholder="email@email.com">
+                    <input type="email" id="email" name="email" placeholder="email@email.com" required>
                 </div>
 
                 <div class="input">
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="800-555-0000">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="800-555-0000" required>
                 </div>
 
             </section>
@@ -70,20 +70,20 @@
 
                 <div class="input">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" minlength="8" placeholder="********">
+                    <input type="password" id="password" name="password" minlength="8" placeholder="********" required>
                 </div>
 
                 <div class="input">
                     <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" id="password" name="password" minlength="8" placeholder="********">
+                    <input type="password" id="password" name="password" minlength="8" placeholder="********" required>
                 </div>
 
             </section>
 
         </form>
 
-        <button type="submit" class="createAccount">Create Account</button>
-
+        <button type="submit" form="myForm" class="createAccount">Create Account</button>
+    
         <p class="logIn">Already have an account? <a href="log-in" class="logIn">Log in</a></p>
 
     </div>
